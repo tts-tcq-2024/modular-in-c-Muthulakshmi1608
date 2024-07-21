@@ -31,7 +31,7 @@ typedef struct {
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
-void printreferencemanual(const ColorPair* colorPair,int pairNumber);
+void printreferencemanual(const ColorPair* colorPair,int pairNumber,bool Numbertocolor_flg);
 /*
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
