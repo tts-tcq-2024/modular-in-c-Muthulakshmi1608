@@ -12,7 +12,7 @@ void testNumberToPair(int pairNumber,
     printf("Got pair %s\n", colorPairNames);
     assert(colorPair.majorColor == expectedMajor);
     assert(colorPair.minorColor == expectedMinor);
-    printreferencemanual(&colorPair,pairNumber);
+    printreferencemanual(&colorPair,pairNumber,Numbertocolor_flg);
 }
 
 
@@ -28,5 +28,5 @@ void testPairToNumber(
     int pairNumber = GetPairNumberFromColor(&colorPair);
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
-    printreferencemanual(&colorPair,pairNumber);
+    printreferencemanual(&colorPair,pairNumber,Numbertocolor_flg);
 }
