@@ -9,10 +9,12 @@ void testPairToNumber(
     enum MinorColor minor,
     int expectedPairNumber)
 {
+    Numbertocolor_flg=0;
     ColorPair colorPair;
     colorPair.majorColor = major;
     colorPair.minorColor = minor;
     int pairNumber = GetPairNumberFromColor(&colorPair);
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
+    printreferencemanual(&colorPair,pairNumber);
 }
