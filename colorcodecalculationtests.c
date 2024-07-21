@@ -4,13 +4,13 @@ void printreferencemanual(const ColorPair* colorPair,int pairNumber)
     if(Numbertocolor_flg)
     {
         printf("Pair No: %d\n",pairNumber);
-        printf("Major color: %s\n",colorPair.majorColor);
-        printf("Minor Color: %s\n",colorPair.minorColor);
+        printf("Major color: %s\n",colorPair->majorColor);
+        printf("Minor Color: %s\n",colorPair->minorColor);
     }
     else
     {
-        printf("Major color: %s\n",colorPair.majorColor);
-        printf("Minor Color: %s\n",colorPair.minorColor);
+        printf("Major color: %s\n",colorPair->majorColor);
+        printf("Minor Color: %s\n",colorPair->minorColor);
         printf("Pair No: %d\n",pairNumber);        
     }
 }
