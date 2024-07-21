@@ -1,4 +1,17 @@
 #include "colorcodedeclaration.h"
+
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
+int numberOfMajorColors =
+    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
+const int MAX_COLORPAIR_NAME_CHARS = 16;
+int numberOfMinorColors =
+    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
@@ -15,16 +28,8 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     return colorPair;
 }
 
-void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
-{
-    Numbertocolor_flg=1;
-    ColorPair colorPair = GetColorFromPairNumber(pairNumber);
-    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
-    ColorPairToString(&colorPair, colorPairNames);
-    printf("Got pair %s\n", colorPairNames);
-    assert(colorPair.majorColor == expectedMajor);
-    assert(colorPair.minorColor == expectedMinor);
-    printreferencemanual(&colorPair,pairNumber);
+int GetPairNumberFromColor(const ColorPair* colorPair) {
+    return colorPair->majorColor * numberOfMinorColors +
+            colorPair->minorColor + 1;
 }
+
