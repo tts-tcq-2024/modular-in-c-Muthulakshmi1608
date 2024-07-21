@@ -2,7 +2,6 @@
 #include <assert.h>
 #include <stdbool.h>
 
-extern bool Numbertocolor_flg;
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
