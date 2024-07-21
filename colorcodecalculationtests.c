@@ -1,5 +1,5 @@
 #include "colorcodedeclaration.h"
-void printreferencemanual(const ColorPair* colorPair,int pairNumber)
+void printreferencemanual(const ColorPair* colorPair,int pairNumber,bool Numbertocolor_flg)
 {
     if(Numbertocolor_flg)
     {
