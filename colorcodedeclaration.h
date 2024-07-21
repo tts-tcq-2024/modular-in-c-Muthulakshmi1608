@@ -6,6 +6,11 @@ bool Numbertocolor_flg;
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
+extern const char* MajorColorNames[];
+extern const char* MinorColorNames[];
+extern int numberOfMajorColors;
+extern int numberOfMinorColors;
+/*
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };
@@ -17,6 +22,7 @@ const char* MinorColorNames[] = {
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+    */
 
 typedef struct {
     enum MajorColor majorColor;
