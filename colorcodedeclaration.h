@@ -54,7 +54,7 @@ void testNumberToPair(int pairNumber,
     assert(colorPair.majorColor == expectedMajor);
     assert(colorPair.minorColor == expectedMinor);
 }
-*/
+
 void testPairToNumber(
     enum MajorColor major,
     enum MinorColor minor,
@@ -77,3 +77,4 @@ int main() {
 
     return 0;
 }
+*/
