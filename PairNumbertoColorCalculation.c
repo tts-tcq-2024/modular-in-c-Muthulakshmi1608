@@ -1,4 +1,4 @@
-#include <colorcodedeclaration.h>
+#include "colorcodedeclaration.h"
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
