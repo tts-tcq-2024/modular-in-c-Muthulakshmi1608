@@ -14,8 +14,8 @@ extern int numberOfMajorColors;
 extern int numberOfMinorColors;
 
 typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
+     MajorColor majorColor;
+     MinorColor minorColor;
 } ColorPair;
 
 
