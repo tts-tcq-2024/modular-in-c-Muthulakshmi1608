@@ -5,6 +5,6 @@
 #include "identify_color_from_pairnumber.h"
 #include "identify_pairnumber_from_color.h"
 
-void testPairToNumber(enum MajorColor major,enum MinorColor minor, int expectedPairNumber);
-void testNumberToPair(int pairNumber,enum MajorColor expectedMajor,enum MinorColor expectedMinor);
+void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber);
+void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor);
 #endif
