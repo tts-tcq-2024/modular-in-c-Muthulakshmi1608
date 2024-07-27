@@ -3,8 +3,8 @@
 #define MAX_COLORPAIR_NAME_CHARS 16
 
 void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+     MajorColor expectedMajor,
+     MinorColor expectedMinor)
 {
     
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
@@ -18,8 +18,8 @@ void testNumberToPair(int pairNumber,
 
 
 void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
+     MajorColor major,
+     MinorColor minor,
     int expectedPairNumber)
 {
    
