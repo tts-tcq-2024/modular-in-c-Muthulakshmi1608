@@ -1,4 +1,5 @@
-#include "colorcodedeclaration.h"
+#include "color_to_pairnumber_and_pairnumber_to_colorconversion_tests.h"
+
 #define MAX_COLORPAIR_NAME_CHARS 16
 
 void testNumberToPair(int pairNumber,
