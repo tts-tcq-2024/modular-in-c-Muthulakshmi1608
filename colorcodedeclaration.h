@@ -5,8 +5,8 @@
 #include <assert.h>
 #include <stdbool.h>
 
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+typedef enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+typedef enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
 extern const char* MajorColorNames[];
 extern const char* MinorColorNames[];
