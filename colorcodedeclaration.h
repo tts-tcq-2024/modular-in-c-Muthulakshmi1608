@@ -1,3 +1,6 @@
+#ifndef COLORCODEDECLARATION_H
+#define COLORCODEDECLARATION_H
+
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
@@ -18,4 +21,6 @@ typedef struct {
 
 
 void PrintColorCodingReferenceManual();
+
+#endif
 
